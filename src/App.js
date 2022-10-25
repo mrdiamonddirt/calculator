@@ -7,7 +7,7 @@ function App() {
   const buttonnums  = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
   return (
     <>
-    <Calculator total={count} addnum={setCount} />
+    <Calculator display={count} addnum={setCount} />
     <Buttons array={buttonnums} btntotal={count} btncnt={setCount}/>
     </>
   );
@@ -15,7 +15,7 @@ function App() {
 
 function Calculator(props) {
   return(
-    <h1>{props.total}</h1>
+    <h1>{props.display}</h1>
   )
 }
 function Buttons(props) {  
