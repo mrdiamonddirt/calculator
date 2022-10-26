@@ -9,6 +9,7 @@ button{
   /* flex-direction: row; */
   min-width: 100px;
   height: 80px;
+  font-size: 25px;
 }
 .displaydiv{
   display: flex;
@@ -17,6 +18,7 @@ button{
   /* max-width: 300px; */
   height: 80px;
   justify-content: flex-end;
+  padding-right: 25px
 }
 .calculator{
   display: flex;
