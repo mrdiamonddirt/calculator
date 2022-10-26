@@ -27,3 +27,12 @@ button{
   width: 400px;
   /* height: 700px; */
 }
+.equate{
+  display: inline-flex;
+  color: orange;
+
+}
+.equate button{
+  background-color: orangered;
+  width: 200px
+}

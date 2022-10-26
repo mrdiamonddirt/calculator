@@ -5,7 +5,8 @@ import './App.css';
 
 function App() {
   const [count, setCount] = useState('')
-  const buttonnums  = ['C', '$', '%', '/', '7', '8', '9', '*', '4', '5', '6', '-','1', '2', '3', '+', '0', '.', '=']
+  const buttonnums  = ['C', '$', '%', '/', '7', '8', '9', '*', '4', '5', '6', '-','1', '2', '3', '+', '0', '.']
+  const buttonfnc  = ['=']
 
   //create handler to handle adding characters to the display array
   function addnumhander(button) {
@@ -24,6 +25,9 @@ function App() {
     </div>
     <div className='btndiv'>
     <Buttons array={buttonnums} btntotal={count} btncnt={addnumhander}/>
+    <div className='equate'>
+    <Equate array={buttonfnc} btntotal={count} btncnt={addnumhander}/>
+    </div>
     </div>
     </div>
     </>
@@ -38,6 +42,19 @@ function Calculator(props) {
 
 //
 function Buttons(props) {  
+  return (
+  <>
+  {props.array.map((button, index) => {
+    return (
+      <button key={index} onClick={() => props.btncnt(button)}>{button}</button>
+    )
+  })}
+  </>
+  )
+}
+
+//
+function Equate(props) {  
   return (
   <>
   {props.array.map((button, index) => {
