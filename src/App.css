@@ -3,13 +3,14 @@ body{
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  font: 100 14px 'Roboto';
 }
 button{
   /* display: flex; */
   /* flex-direction: row; */
   min-width: 100px;
   height: 80px;
-  font-size: 25px;
+  font: 100 25px 'Roboto';
 }
 .displaydiv{
   display: flex;
