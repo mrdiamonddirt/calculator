@@ -18,8 +18,14 @@ function App() {
   }
   return (
     <>
+    <div className='calculator'>
+    <div className='displaydiv'>
     <Calculator display={count} addnum={setCount} />
+    </div>
+    <div className='btndiv'>
     <Buttons array={buttonnums} btntotal={count} btncnt={addnumhander}/>
+    </div>
+    </div>
     </>
   );
 }
