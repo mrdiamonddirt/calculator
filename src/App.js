@@ -13,8 +13,10 @@ function App() {
     setCount(count + button)
     if (button === 'C') {
       setCount('')
-    } else if ( button === '=' ) {
+    } else if ( button === '=' & count !== '' ) {
       setCount(evaluate(count)) 
+    } else if ( button === '=' & count === '' ){
+      setCount("set sum first, press 'C'")
     }
   }
   return (
