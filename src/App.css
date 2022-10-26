@@ -4,6 +4,7 @@ body{
   justify-content: center;
   margin-top: 50px;
   font: 100 14px 'Roboto';
+  background-color: lightcyan;
 }
 button{
   /* display: flex; */
@@ -11,6 +12,12 @@ button{
   min-width: 100px;
   height: 80px;
   font: 100 25px 'Roboto';
+  background-color: lightgrey;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: aliceblue;
 }
 .displaydiv{
   display: flex;
@@ -19,7 +26,8 @@ button{
   /* max-width: 300px; */
   height: 80px;
   justify-content: flex-end;
-  padding-right: 25px
+  padding-right: 25px;
+  border-radius: 5px;
 }
 .calculator{
   display: flex;
@@ -35,4 +43,7 @@ button{
 .equate button{
   background-color: orangered;
   width: 200px
+}
+.equate button:hover{
+background-color: red;
 }
