@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+## Calculator app created by RowDog, Rowan Wood
+
+Calculator app created in react to do sums and demonstrate basic understanding of react
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
