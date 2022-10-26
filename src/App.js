@@ -5,12 +5,12 @@ import './App.css';
 
 function App() {
   const [count, setCount] = useState('')
-  const buttonnums  = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '-','*', '/', '.', '=', 'c']
+  const buttonnums  = ['C', '$', '%', '/', '7', '8', '9', '*', '4', '5', '6', '-','1', '2', '3', '+', '0', '.', '=']
 
   //create handler to handle adding characters to the display array
   function addnumhander(button) {
     setCount(count + button)
-    if (button === 'c') {
+    if (button === 'C') {
       setCount('')
     } else if ( button === '=' ) {
       setCount(evaluate(count)) 
